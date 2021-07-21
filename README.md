@@ -19,7 +19,7 @@ The application will allow a user to post a project he/she has created and get i
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display Home page | **On page load** | Display posted projects|
-**On signing in** | create a new project|update profile|Rate/ review other users' projects | **On page load** | view projects and reviews  **Signing out** |displays the home page  |
+**On signing in** | create a new project|update profile| |Rate/ review other users' projects | **On page load** | view projects and reviews | **Signing out** |displays the home page  |
 
 
 
