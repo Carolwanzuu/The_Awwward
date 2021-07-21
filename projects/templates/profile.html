@@ -1,0 +1,36 @@
+<div class="class" style="font-family: 'Jost', sans-serif;">
+    {%extends 'base.html'%}
+    {%block content%}
+    <div class="col-sm-6 m-auto " style="font-family: 'Jost', sans-serif;">
+        <div class=" content-section container" style="padding-top: 100px;">
+            <div class="media">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="img-fluid" width="120%" height="120%" src="{{profiles.profilePic.url}}">
+                        <div class="card-body">
+                            <div class="card-title">
+                                {{profiles.bio}}
+                            </div>
+                            <div class="card-text">
+                                {{profiles.user}}
+                                <hr>
+                                {{profiles.contact}}
+                            </div>
+                            <div class="media-body">
+                                <h2 class="account-heading">{{user.username}}</h2>
+                                <p class="text-secondary">{{user.email}}</p>
+                                <p>{{user.profilePic.url}}</p>
+                                <hr>
+
+                                <a href="{% url 'editprofile' %}">
+                                    <button class="btn btn-primary">Edit Profile</button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {%endblock%}s
+            </div>
